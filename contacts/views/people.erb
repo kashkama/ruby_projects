@@ -1,0 +1,10 @@
+<h1>People</h1>
+
+  <h3>Here are people you saved: </h3>
+  <h1><a href="/form/new">Add person</a></h1>
+  <br/>
+  <ul>
+  <% @people.each() do |person| %>
+    <li><a href="/people/<%= people.id() %>"><%= person.first_name() %></a></li>
+  <% end %>
+  </ul>

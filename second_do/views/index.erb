@@ -1,0 +1,4 @@
+<h1>Welcome to TO DO LIST App</h1>
+<% @tasks.each()  do |task| %>
+  <li><%= task.description %><a href="/tasks/<%= task.id()%>/edit">Update this task's desciption</a></li>
+<% end %>
